@@ -16,7 +16,8 @@ body {
 
 .login-container {
     background-color: #F2F1EC;
-    width: 270px;
+    width:50%;
+    height: auto;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -30,6 +31,34 @@ body {
 .topo > h2{
     position: relative;
     top: 25px;
+}
+
+#voltar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    right: 85%;
+    top: 12%;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #12FF46;
+    width: 150px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+#voltar:hover{
+    background-color: white;
+    border: 2px solid black;
 }
 
 #logo{
@@ -53,6 +82,8 @@ body {
 
 .form-group {
     margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
@@ -60,8 +91,12 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
+    display: flex;
+    align-items: center;
+    margin:10px;
+    justify-content: center;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -89,6 +124,10 @@ input[type="password"] {
     transform: scale(1.1);
 }
 
+h2{
+    position: relative;
+    left: 35%;
+}
 .error-message {
     color: #ff0000;
     font-size: 14px;

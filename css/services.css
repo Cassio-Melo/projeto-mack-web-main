@@ -1,3 +1,19 @@
+
+#Hardware{
+    background-image: url("/images/HARDWARE.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#equipamentos{
+    background-image: url("/images/equipamentos.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .services{
     margin: 5rem 0;
     width: 100vw;
@@ -42,10 +58,23 @@
 }
 
 .contentServices--link{
+    position: relative;
+    color: black;
+    top: 70%;
+    text-decoration: none;
+    background-color: white;
     border: 1px solid var(--primary-color);
     border-radius: 1.5rem;
     padding: .5rem;
     font-size: .5rem;
+    transition: transform 0.3s ease;
+}
+
+.contentServices--link:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #7ED957;
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 1600px) {
