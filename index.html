@@ -24,6 +24,7 @@
     crossorigin="anonymous"></script>
   <!-- Incluir estilos personalizados -->
   <script src="js/galeria.js"></script>
+  <script src="js/att.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -35,7 +36,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <!-- Logo -->
       <div id="logo">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img id="myimg" src="/images/logo vertical.png" alt="Logo" width="50">
         </a>
       </div>
@@ -50,9 +51,68 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Inicio</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">Anuncie aqui</a>
+            <button type="button" class="btn " value="Anuncie aqui" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="nav-link" id="aq" href="#">Anuncie Aqui</a>
+
+            </button>
+            <!-- Button trigger modal -->
+            
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Anunciar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="post" class="formmodal">
+
+                        <div id="tipo produto">
+                        <h3>Tipo de Produto</h3>
+                        <div class="d-flex justify-content-around">
+                        <label for=""><input type="radio" name="hardware" id="">Hardware</label>
+                        <label for=""><input type="radio" name="Equipamentos" id="">Equipamentos</label>
+
+                        </div>
+                        
+                        </div>
+
+                        <div id="esp">
+                          <h3>Especificações</h3>
+                          <div class="es">
+                            <label for="">Nome do produto</label> 
+                            <input type="text" placeholder="Nome Produto">
+                            <label for="">CNPJ Empresa</label> 
+                            <input type="text" placeholder="CNPJ Empresa">
+                            <label for="">Sobre o Produto</label> 
+                            <textarea name="" id="" placeholder="Sobre o Produto"></textarea>
+                            <label for="">Preço</label>
+                            <input type="text" placeholder="Digite o preço">
+                            <label for="">Upload Foto</label>
+                            <input class="container" type="file">
+
+
+                          </div>
+
+
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="mybtn btn ">Anunciar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </li>
+
+
           <li class="nav-item">
             <a class="nav-link" href="#empresas">Empresas Colaboradoras</a>
           </li>
@@ -62,12 +122,8 @@
               Categorias
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Equipamentos</a></li>
-              <li><a class="dropdown-item" href="#">Hardware</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Peças Separadas</a></li>
+              <li><a class="dropdown-item" href="software.html">Equipamentos</a></li>
+              <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
             </ul>
           </div>
         </ul>
@@ -94,10 +150,10 @@
       <ul class="contentServices__list">
         <li class="contentServices__item" id="Hardware">
 
-          <a class="contentServices--link">Ver detalhes</a>
+          <a href="hardware.html" class="contentServices--link">Ver detalhes</a>
         </li>
         <li class="contentServices__item" id="equipamentos">
-          <a class="contentServices--link">Ver detalhes</a>
+          <a class="contentServices--link" href="software.html">Ver detalhes</a>
         </li>
 
       </ul>
