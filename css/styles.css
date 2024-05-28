@@ -7,7 +7,8 @@
 @import url(./contact.css);
 @import url(./footer.css);
 @import url(./nav.css);
-
+@import url(./hardware.css);
+@import url(./compra.css);
 :root {
     --primary-font: 'Poppins';
     --secundary-color: white;
@@ -27,4 +28,26 @@ body {
     font-family:'Times New Roman', Times, serif;
     font-size: 16px;
     font-weight: 200;
+}
+
+#aq{
+    font-size: 25px;
+}
+
+.formmodal h3{
+    text-align: center;
+    margin: 10px;
+}
+.es{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 15px;
+    
+}
+
+.mybtn{
+    background-color: chartreuse;
 }
